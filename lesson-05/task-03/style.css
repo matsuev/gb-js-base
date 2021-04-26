@@ -1,0 +1,29 @@
+.catalog-item {
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+   border-bottom: 1px solid #ccc;
+}
+
+.catalog-item::after {
+   display: table;
+   content: "";
+   float: none;
+   clear: both;
+}
+
+.product-image {
+   width: 120px;
+   float: left;
+   margin-right: 40px;
+}
+
+.product-container {
+   margin-left: 170px;
+}
+
+.basket {
+   display: block;
+   padding: 20px;
+   font-size: 1.25em;
+   background-color: #eee;
+}

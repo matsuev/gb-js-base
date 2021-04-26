@@ -1,0 +1,52 @@
+.chessboard {
+   display: inline-block;
+   border: 1px solid black;
+}
+
+.chessboard * {
+   display: block;
+   box-sizing: border-box;
+}
+
+.chessboard-row::after {
+   display: table;
+   content: " ";
+   float: none;
+   clear: both;
+}
+
+.chessboard-cell {
+   float: left;
+   height: 50px;
+   width: 50px;
+}
+
+.chessboard-cell.cell-label {
+   line-height: 50px;
+   text-align: center;
+}
+
+.chessboard-cell.cell-white {
+   background-color: black;
+}
+
+.chessboard-cell.cell-black {
+   background-color: white;
+}
+
+.chessboard-row:first-child .cell-label {
+   border-bottom: 1px solid black;
+}
+
+.chessboard-row:last-child .cell-label {
+   border-top: 1px solid black;
+}
+
+.cell-label:first-child {
+   border-right: 1px solid black;
+}
+
+.cell-label:last-child {
+   border-left: 1px solid black;
+}
+
