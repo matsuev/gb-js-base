@@ -1,0 +1,32 @@
+.snake-game {
+   margin: 20px;
+   position: absolute;
+   border: 2px solid black;
+}
+
+.snake-game > div::after {
+   display: table;
+   content: "";
+   float: none;
+   clear: both;
+}
+
+.snake-game > div > div {
+   float: left;
+   width: 25px;
+   height: 25px;
+   box-sizing: border-box;
+   border-radius: 9px;
+}
+
+.snake-game > div > div.head {
+   background-color: blue;
+}
+
+.snake-game > div > div.body {
+   border: 5px solid blue;
+}
+
+.snake-game > div > div.target {
+   border: 5px solid red;
+}
