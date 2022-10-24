@@ -1,1 +1,1 @@
-# learn-js
+# GeekBrains. Курс "Базовый курс JavaScript"
